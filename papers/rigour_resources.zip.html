@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Resources for &#8220;A Rigorous Evaluation of Crossover and Mutation in Genetic Programming&#8221; | David R. White</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://www.davidrwhite.co.uk/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://www.davidrwhite.co.uk/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="David R. White &raquo; Feed" href="http://www.davidrwhite.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="David R. White &raquo; Comments Feed" href="http://www.davidrwhite.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="David R. White &raquo; Resources for &#8220;A Rigorous Evaluation of Crossover and Mutation in Genetic Programming&#8221; Comments Feed" href="http://www.davidrwhite.co.uk/resources-for-a-rigorous-evaluation-of-crossover-and-mutation-in-genetic-programming/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.davidrwhite.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=9ab702457e115d470946999eb4979074"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sfmsb-style-css'  href='http://www.davidrwhite.co.uk/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/style.css?ver=3.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sfmsb-icons-css'  href='http://www.davidrwhite.co.uk/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/icons.css?ver=3.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='http://www.davidrwhite.co.uk/wp-content/themes/twentytwelve/style.css?ver=9ab702457e115d470946999eb4979074' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://www.davidrwhite.co.uk/wp-content/themes/twentytwelve-child/style.css?ver=9ab702457e115d470946999eb4979074' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://www.davidrwhite.co.uk/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.davidrwhite.co.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.davidrwhite.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.davidrwhite.co.uk/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/js/front-widget.js?ver=3.3.3'></script>
+<link rel='https://api.w.org/' href='http://www.davidrwhite.co.uk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.davidrwhite.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.davidrwhite.co.uk/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="http://www.davidrwhite.co.uk/resources-for-a-rigorous-evaluation-of-crossover-and-mutation-in-genetic-programming/" />
+<link rel='shortlink' href='http://www.davidrwhite.co.uk/?p=63' />
+<link rel="alternate" type="application/json+oembed" href="http://www.davidrwhite.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.davidrwhite.co.uk%2Fresources-for-a-rigorous-evaluation-of-crossover-and-mutation-in-genetic-programming%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.davidrwhite.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.davidrwhite.co.uk%2Fresources-for-a-rigorous-evaluation-of-crossover-and-mutation-in-genetic-programming%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.davidrwhite.co.uk/?wordfence_lh=1&hid=2A0F887A2D0378B644BA06184B4AE148');
+</script></head>
+
+<body class="page-template-default page page-id-63 full-width custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://www.davidrwhite.co.uk/" title="David R. White" rel="home">David R. White</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-53"><a href="http://www.davidrwhite.co.uk/">About</a></li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://www.davidrwhite.co.uk/publications/">Publications</a></li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="http://www.davidrwhite.co.uk/teaching/">Teaching</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="http://www.davidrwhite.co.uk/blog-2/">Blog</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+				<a href="http://www.davidrwhite.co.uk/"><img src="http://www.davidrwhite.co.uk/wp-content/uploads/2014/09/copy-stockholm.jpg" class="header-image" width="960" height="250" alt="David R. White" /></a>
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+							
+	<article id="post-63" class="post-63 page type-page status-publish hentry">
+		<header class="entry-header">
+												<h1 class="entry-title">Resources for &#8220;A Rigorous Evaluation of Crossover and Mutation in Genetic Programming&#8221;</h1>
+		</header>
+
+		<div class="entry-content">
+			<p><strong>Authors: David R. White and Simon Poulding</strong></p>
+<p>This <a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/a_rigorous_evaluation_of_crossover_and_mutation_in_genetic_programming.pdf">paper</a> compared mutation-only GP with crossover-only GP, across a range of problems taken from the <a href="http://cs.gmu.edu/~eclab/projects/ecj/">ECJ Toolkit</a>. Please note that <strong>Version 16</strong> of the toolkit was used.</p>
+<p>This webpage contains online resources designed to enable other researchers to recreate our work.</p>
+<p>We actively encourage feedback, debate, suggestions and constructive criticism: please feel free to <a href="mailto:david.r.white@glasgow.ac.uk">contact us</a>.</p>
+<h2>Overview</h2>
+<p>Matlab was used to generate CSV files describing experiments to be run. These files were then run through ECJ by using a subclass of ec.Evolve. The results were written out in CSV format and read back in Matlab, which was used to perform all the analysis reported in the paper.</p>
+<p>Each example problem given in the ec.app package of the ECJ 16 distribution was assigned a number, and our published results examine a subset of these problems. We collapsed the parameter file hierarchies for each problem into a single ECJ parameter file, and these files are required by BatchEvolve: they can be downloaded below. Note that for problem 9, the Santa Fe Ant Trail, the trail file provided with ECJ must be in the same directory as these parameter files.</p>
+<h2>File Formats</h2>
+<p>We used a simple CSV file format to describe experiments to be run, produced by Matlab, and to return the results of those experiments. Each row in the file corresponds to a single experiment. Here&#8217;s an extract of an input batch file given to test.BatchEvolve:</p>
+<p><code>ID,Algorithm,Problem,seed.0,gp.koza.half.growp,gp.koza.half.max-depth,gp.koza.half.min-depth, gp.koza.ns.root,gp.koza.ns.terminals,gp.koza.xover.maxdepth,gp.koza.mutate.maxdepth, pop.subpop.0.size,pop.subpop.0.species.pipe.source.0.prob,select.tournament.size, gp.koza.grow.min-depth,gp.koza.grow.max-depth,generations,gp.koza.ns.nonterminals, pop.subpop.0.species.pipe.source.1.prob,pop.subpop.0.species.pipe.source.0 101010001,C,1,84125490,0.5,10,5,0.5,0.05,19,NaN,761,0.55,2,NaN,NaN,69,0.45,0.45,ec.gp.koza.CrossoverPipeline 101010002,C,1,-1574848641,0.5,7,4,0,0.5,5,NaN,30,0.55,6,NaN,NaN,1750,0.5,0.45,ec.gp.koza.CrossoverPipeline 101010003,C,1,1429046270,0.5,10,8,0.25,0.375,19,NaN,1500,0.55,9,NaN,NaN,35,0.375,0.45,ec.gp.koza.CrossoverPipeline 101010004,C,1,1048161384,0.5,10,3,0.5,0.15,19,NaN,1500,1,6,NaN,NaN,35,0.35,0,ec.gp.koza.CrossoverPipeline</code></p>
+<p>The first line (split over multiple lines in this page) is a header: the first three columns are specific to our work, the remainder are the ECJ names of parameters we were manipulating in our experimentation, and more information can be found in the <a href="http://cs.gmu.edu/~eclab/projects/ecj/docs/classdocs/index.html">ECJ Class documentation</a>. ID allowed us to identifiy a single experiment, Algorithm indicates whether we&#8217;re considering (C)rossover only, (M)utation only, or (D)efault ECJ parameter values. Problem is the problem number corresponding to the parameter files below.</p>
+<p>NaN is used to indicate where a field is not applicable for that particular algorithm. Note that the seeds are included in the file, so to carry out multiple repetitions we gave multiple lines with the same parameters and a different seed. The file includes dependent parameter settings, which are derived from other parameters: see the paper for further details. The role of the final column is to select between mutation and crossover as the exclusive genetic operator used.</p>
+<p>The corresponding output file from test.BatchEvolve is as follows:</p>
+<p><code>ID,Algorithm,Problem,seed.0,gp.koza.half.growp,gp.koza.half.max-depth,gp.koza.half.min-depth, gp.koza.ns.root,gp.koza.ns.terminals,gp.koza.xover.maxdepth,gp.koza.mutate.maxdepth, pop.subpop.0.size,pop.subpop.0.species.pipe.source.0.prob,select.tournament.size, gp.koza.grow.min-depth,gp.koza.grow.max-depth,generations,gp.koza.ns.nonterminals, pop.subpop.0.species.pipe.source.1.prob,pop.subpop.0.species.pipe.source.0, Raw Fitness,Adjusted Fitness,Hits 101010001,C,1,84125490,0.5,10,5,0.5,0.05,19,NaN,761,0.55,2,NaN,NaN,69,0.45,0.45,ec.gp.koza.CrossoverPipeline,0.58092475,0.6325412,6.0 101010002,C,1,-1574848641,0.5,7,4,0,0.5,5,NaN,30,0.55,6,NaN,NaN,1750,0.5,0.45,ec.gp.koza.CrossoverPipeline,10.765929,0.084991165,3.0 101010003,C,1,1429046270,0.5,10,8,0.25,0.375,19,NaN,1500,0.55,9,NaN,NaN,35,0.375,0.45,ec.gp.koza.CrossoverPipeline,0.10179605,0.907609,18.0 101010004,C,1,1048161384,0.5,10,3,0.5,0.15,19,NaN,1500,1,6,NaN,NaN,35,0.35,0,ec.gp.koza.CrossoverPipeline,0.198151,0.83461934,9.0</code></p>
+<p>Note the three appended columns for the response value, the fitness of the best individual found. The rest of the file is unchanged.</p>
+<h2>Running an Experiment</h2>
+<p>To run an experiment, your CSV file should be (for example):</p>
+<p><em>experiments/anexperiment/firstrun.csv</em></p>
+<p>The parameter files and ant trail file should be at:</p>
+<p><em>experiments/ParameterFiles/problem_1.params</em> etc.</p>
+<p>Then you can launch the compiled BatchEvolve.java from the <em>experiments/anexperiment</em> directory:</p>
+<p><em>java -cp &#8230; test.BatchEvolve -start 1 -end 100 -batchfile test.csv -resultfile out.csv</em></p>
+<p>An output file will be generated with the response measure (the stats of the best individual: raw fitness, adjusted fitness and number of hits) appended to each line from the input file. This can then be processed in Matlab.</p>
+<h2>Code</h2>
+<p><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/BatchEvolve.java">BatchEvolve.java</a> &#8211; subclass of ec.Evolve to run a CSV file of experiments.</p>
+<p>Please note that this is not polished software! Use at your own risk. We expect this will only be useful for repeating the experimentation found in the paper, as it is mostly hard-coded validation of input. If you have any suggestions for improvements or bugfixes, please <a href="mailto:david.r.white@glasgow.ac.uk">contact us</a>, we&#8217;ll do our best to implement them and post the new code.</p>
+<p>Note also that this class relies on the <a href="http://ostermiller.org/utils/">ostermillerutils</a> jar for CSV support. We used version 1.07.</p>
+<h2>Parameter Files</h2>
+<table>
+<tbody>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_1.params.txt">Problem 1</a></td>
+<td>Symbolic regression of x^4 + x^3 + x^2 + x with no ERCs.</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_4.params.txt">Problem 4</a></td>
+<td>Symbolic regression of x^5 &#8211; 2x^3 + x with ERCs.</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_7.params.txt">Problem 7</a></td>
+<td>Two-Box Problem</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_9.params.txt">Problem 9</a></td>
+<td>Santa Fe Ant Trail</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_16.params.txt">Problem 16</a></td>
+<td>Boolean 11 Multiplexer</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/problem_17.params.txt">Problem 17</a></td>
+<td>Lawnmower</td>
+</tr>
+</tbody>
+</table>
+<h2>Results Files</h2>
+<p>The following are output CSV files from BatchEvolve that we used in published analysis. The filenames are a bit of a legacy issue! The ExpE refers to the set of experiments (the final, published set). The following character &#8220;c&#8221; &#8220;m&#8221; or &#8220;d&#8221; indicates the use of crossover-only algorithm A_c, mutation-only algorithm A_m or the ECJ defaults A_d. Succeeding that is the problem number (refer to the list above to match a problem number with its description). The index prefixed with an &#8220;i&#8221; is the &#8220;iteration number&#8221;. The first iteration i01 was the full factorial: the second iteration i02 was a test of the optimised parameters that composed A_c* and A_m*.</p>
+<p>To run the experiments yourself, you&#8217;ll need to remove the last three fields from these files, which give the response values (the fitness of the best individual in the last generation).</p>
+<table>
+<tbody>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p01_i01_responses.csv.tar.gz"> ExpE_c_p01_i01_responses.csv.tar.gz</a></td>
+<td>Problem 1, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p01_i01_responses.csv.tar.gz">ExpE_m_p01_i01_responses.csv.tar.gz</a></td>
+<td>Problem 1, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p01_i01_responses.csv.tar.gz">ExpE_d_p01_i01_responses.csv.tar.gz</a></td>
+<td>Problem 1, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p01_i02_responses.csv.tar.gz">ExpE_c_p01_i02_responses.csv.tar.gz</a></td>
+<td>Problem 1, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p01_i02_responses.csv.tar.gz">ExpE_m_p01_i02_responses.csv.tar.gz</a></td>
+<td>Problem 1, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p04_i01_responses.csv.tar.gz">ExpE_c_p04_i01_responses.csv.tar.gz</a></td>
+<td>Problem 4, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p04_i01_responses.csv.tar.gz">ExpE_m_p04_i01_responses.csv.tar.gz</a></td>
+<td>Problem 4, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p04_i01_responses.csv.tar.gz">ExpE_d_p04_i01_responses.csv.tar.gz</a></td>
+<td>Problem 4, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p04_i02_responses.csv.tar.gz">ExpE_c_p04_i02_responses.csv.tar.gz</a></td>
+<td>Problem 4, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p04_i02_responses.csv.tar.gz">ExpE_m_p04_i02_responses.csv.tar.gz</a></td>
+<td>Problem 4, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p07_i01_responses.csv.tar.gz">ExpE_c_p07_i01_responses.csv.tar.gz</a></td>
+<td>Problem 7, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p07_i01_responses.csv.tar.gz">ExpE_m_p07_i01_responses.csv.tar.gz</a></td>
+<td>Problem 7, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p07_i01_responses.csv.tar.gz">ExpE_d_p07_i01_responses.csv.tar.gz</a></td>
+<td>Problem 7, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p07_i02_responses.csv.tar.gz">ExpE_c_p07_i02_responses.csv.tar.gz</a></td>
+<td>Problem 7, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p07_i02_responses.csv.tar.gz">ExpE_m_p07_i02_responses.csv.tar.gz</a></td>
+<td>Problem 7, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p09_i01_responses.csv.tar.gz">ExpE_c_p09_i01_responses.csv.tar.gz</a></td>
+<td>Problem 9, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p09_i01_responses.csv.tar.gz">ExpE_m_p09_i01_responses.csv.tar.gz</a></td>
+<td>Problem 9, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p09_i01_responses.csv.tar.gz">ExpE_d_p09_i01_responses.csv.tar.gz</a></td>
+<td>Problem 9, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p09_i02_responses.csv.tar.gz">ExpE_c_p09_i02_responses.csv.tar.gz</a></td>
+<td>Problem 9, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p09_i02_responses.csv.tar.gz">ExpE_m_p09_i02_responses.csv.tar.gz</a></td>
+<td>Problem 9, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p16_i01_responses.csv.tar.gz">ExpE_c_p16_i01_responses.csv.tar.gz</a></td>
+<td>Problem 16, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p16_i01_responses.csv.tar.gz">ExpE_m_p16_i01_responses.csv.tar.gz</a></td>
+<td>Problem 16, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p16_i01_responses.csv.tar.gz">ExpE_d_p16_i01_responses.csv.tar.gz</a></td>
+<td>Problem 16, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p16_i02_responses.csv.tar.gz">ExpE_c_p16_i02_responses.csv.tar.gz</a></td>
+<td>Problem 16, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p16_i02_responses.csv.tar.gz">ExpE_m_p16_i02_responses.csv.tar.gz</a></td>
+<td>Problem 16, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p17_i01_responses.csv.tar.gz">ExpE_c_p17_i01_responses.csv.tar.gz</a></td>
+<td>Problem 17, Crossover and Reproduction (A_c), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p17_i01_responses.csv.tar.gz">ExpE_m_p17_i01_responses.csv.tar.gz</a></td>
+<td>Problem 17, Mutation and Reproduction (A_m), Full Factorial</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_d_p17_i01_responses.csv.tar.gz">ExpE_d_p17_i01_responses.csv.tar.gz</a></td>
+<td>Problem 17, ECJ Defaults (A_d)</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_c_p17_i02_responses.csv.tar.gz">ExpE_c_p17_i02_responses.csv.tar.gz</a></td>
+<td>Problem 17, Optimised Crossover (A_c*), 500 Repetitions</td>
+</tr>
+<tr>
+<td><a href="http://davidrwhite.co.uk/wp-content/uploads/2014/09/ExpE_m_p17_i02_responses.csv.tar.gz">ExpE_m_p17_i02_responses.csv.tar.gz</a></td>
+<td>Problem 17, Optimised Mutation (A_m*), 500 Repetitions</td>
+</tr>
+</tbody>
+</table>
+					</div><!-- .entry-content -->
+		<footer class="entry-meta">
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+				
+<div id="comments" class="comments-area">
+
+	
+	
+	
+</div><!-- #comments .comments-area -->			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://www.davidrwhite.co.uk/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='http://www.davidrwhite.co.uk/wp-includes/js/wp-embed.min.js?ver=9ab702457e115d470946999eb4979074'></script>
+</body>
+</html>
